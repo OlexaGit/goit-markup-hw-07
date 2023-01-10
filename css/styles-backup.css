@@ -452,11 +452,9 @@ textarea {
   color: var(--secondary-color);
 }
 .advantages {
+  width: 1158px;
   margin: 0 auto;
   display: flex;
-}
-.advantages-list {
-  width: 264px;
 }
 .advantages-list:not(:last-child) {
   margin-right: 24px;
