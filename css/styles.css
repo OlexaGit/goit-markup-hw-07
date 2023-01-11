@@ -94,7 +94,7 @@ footer {
   align-items: center;
 } */
 .nav-logo {
-  display: flex;
+  /* display: flex; */
   padding-top: 24px;
 }
 /* .menu-nav {
@@ -493,6 +493,7 @@ textarea {
 }
 .fone {
   background-color: var(--footer-logo-color);
+  margin: 0 auto;
 }
 .fone-item {
   background-color: var(--text-background-color);
@@ -535,28 +536,33 @@ textarea {
   color: var(--footer-logo-color);
   fill: currentColor;
 }
-.customers-list {
-  /* display: flex; */
+/* .customers-list {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
+  justify-content: space-between;
+} */
 .customers-item {
   fill: currentColor;
 }
 .block-customer {
   display: flex;
-  color: #8e8f99;
-  align-items: center;
-  justify-content: center;
-  width: 168px;
+  /* width: 168px; */
   height: 88px;
   outline: 1px solid currentColor;
   border-radius: 4px;
   transition: color 250ms var(--cubic-bezier);
+  color: #8e8f99;
+}
+.focus-customer {
+  margin: 0 auto;
+  padding: 16px 32px;
+  color: #8e8f99;
+  transition: color 250ms var(--cubic-bezier);
 }
 .block-customer:hover,
-.block-customer:focus {
+.block-customer:focus,
+.focus-customer:hover,
+.focus-customer:focus {
   color: var(--accent-color-logo);
 }
 h1,
@@ -683,8 +689,14 @@ ol {
   .btn-footer {
     margin-top: 16px;
   }
-  .primery-section {
-    padding: 112px 0;
+  .customers-list li {
+    width: 50%;
+  }
+  .our-team {
+    text-align: center;
+  }
+  .advantages-list:not(:last-child) {
+    padding-bottom: 72px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -694,6 +706,26 @@ ol {
   .header-menu-contact {
     display: none;
   }
+  .subtitle {
+    text-align: center;
+  }
+  .primery-section {
+    width: 428px;
+    padding: 112px 0;
+  }
+  .fone {
+    width: 428px;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* .we-doing {
+    text-align: center;
+  }
+  .fone-item {
+    text-align: center;
+  } */
 }
 
 /* ------------- adaptive tablet ------------- */
@@ -701,6 +733,9 @@ ol {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+  .nav-logo {
+    display: flex;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -755,6 +790,9 @@ ol {
     width: 1440px;
     padding: 192px 0;
   }
+  .fone {
+    width: 1440px;
+  }
   .primery-title {
     width: 496px;
   }
@@ -775,5 +813,8 @@ ol {
   }
   .customers-list {
     display: flex;
+  }
+  .block-customer:not(:last-child) {
+    margin-right: 24px;
   }
 }
