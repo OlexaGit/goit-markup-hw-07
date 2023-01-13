@@ -19,6 +19,10 @@ body {
 
 /* --------------     HEADER  &  FOOTER ----------------- */
 
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+}
 .link-logo,
 .menu-link {
   text-decoration: none;
@@ -84,9 +88,7 @@ footer {
   margin-top: 16px;
 }
 .container {
-  width: 100%;
   margin: 0 auto;
-  padding: 0px 15px;
 }
 .nav-logo {
   padding-top: 24px;
@@ -206,6 +208,10 @@ footer {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--background-focus-btn);
+}
+.menu-toggle {
+  /* padding: 0 auto; */
+  background-color: #ffffff;
 }
 
 /*--------------------- modal window (begine)------------ */
@@ -659,7 +665,7 @@ ol {
     min-width: 320px;
   }
   .nav-logo {
-    padding-bottom: 22px;
+    padding-bottom: 18px;
   }
   .advantages-list:not(:last-child) {
     padding-bottom: 72px;
@@ -669,22 +675,22 @@ ol {
   }
 }
 @media screen and (min-width: 428px) {
-  .container {
-    width: 428px;
-    padding: 0;
-  }
-  .nav-logo {
-    padding-left: 16px;
-  }
   .btn-footer {
     margin-top: 16px;
   }
-
+}
+@media screen and (max-width: 767px) {
+  header {
+    margin: 0 auto;
+    min-width: 428px;
+  }
+  .container {
+    width: 428px;
+    padding: 0 15px;
+  }
   .section-advantages {
     padding: 96px 16px;
   }
-}
-@media screen and (max-width: 767px) {
   .menu-nav {
     display: none;
   }
@@ -702,7 +708,7 @@ ol {
   .primery-title {
     font-size: 36px;
     line-height: 1.11;
-    margin: 0 54px 80px 54px;
+    margin: 0 39px 80px 39px;
   }
   .fone {
     width: 428px;
@@ -718,14 +724,13 @@ ol {
   }
   .customers-list {
     flex-wrap: wrap;
-    padding: 0px 16px 96px 16px;
     margin: 0 -8px;
+    padding-bottom: 96px;
   }
   .block-customer {
     width: calc((100% - 2 * 16px) / 2);
     margin: 72px 8px 0px 8px;
   }
-
   footer {
     width: 428px;
     text-align: center;
@@ -775,6 +780,9 @@ ol {
   }
   .form-mw {
     padding: 72px 24px 24px;
+  }
+  .menu-toggle {
+    display: none;
   }
 }
 @media screen and (max-width: 1199px) {
