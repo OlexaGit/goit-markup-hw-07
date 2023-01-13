@@ -769,6 +769,12 @@ ol {
     margin: 0 auto 48px auto;
     width: 496px;
   }
+  .modal {
+    width: 408px;
+  }
+  .form-mw {
+    padding: 72px 24px 24px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .icon-block {
@@ -871,11 +877,5 @@ ol {
   }
   .title {
     margin-bottom: 72px;
-  }
-  .modal {
-    width: 408px;
-  }
-  .form-mw {
-    padding: 72px 24px 24px;
   }
 }
