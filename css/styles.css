@@ -390,10 +390,10 @@ textarea {
   margin-bottom: 8px;
   color: var(--primary-color);
 }
-.subtitle {
+/* .subtitle {
   font-size: 36px;
   line-height: 1.11;
-}
+} */
 .subtitle-name {
   font-size: 20px;
   line-height: 1.2;
@@ -549,7 +549,7 @@ ol {
   letter-spacing: 0.04em;
   background: var(--footer-logo-color);
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px 24px;
   color: var(--accent-color-logo);
   transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier),
     box-shadow 250ms var(--cubic-bezier);
@@ -562,16 +562,16 @@ ol {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .navigation-list {
-  margin-bottom: 72px;
+  min-width: 320px;
   justify-content: center;
   display: flex;
 }
-.card-set {
+/* .card-set {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-}
+} */
 .card-set-list {
   flex-basis: calc((100% - 48px) / 3);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -704,6 +704,7 @@ ol {
   .section-advantages {
     padding: 96px 16px;
   }
+  /* ---portfolio------- */
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages-list:not(:last-child) {
@@ -713,6 +714,11 @@ ol {
 @media screen and (min-width: 428px) {
   .btn-footer {
     margin-top: 16px;
+  }
+  /* ---portfolio------- */
+  .portfolio-main {
+    width: 428px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -732,7 +738,7 @@ ol {
   .header-menu-contact {
     display: none;
   }
-  .subtitle,
+
   .subtitle-name {
     text-align: center;
   }
@@ -751,7 +757,7 @@ ol {
   .we-doing {
     padding: 0px 66px 96px 66px;
   }
-  .we-doing-list {
+  .we-doing .we-doing-list {
     margin-top: 72px;
   }
   .customers-list {
@@ -787,6 +793,16 @@ ol {
   }
   .modal {
     width: 392px;
+  }
+
+  /* -----------------portfolio---------- */
+  .navigation-list {
+    flex-wrap: wrap;
+    margin: 48px 0px 32px;
+  }
+  .navigation-list .we-doing-list {
+    margin-right: 24px;
+    margin-bottom: 16px;
   }
 }
 
@@ -848,6 +864,12 @@ ol {
   .footer {
     display: flex;
   }
+
+  /* ------------portfolio--------------- */
+
+  .link-filtr-btn {
+    padding: 12px 24px;
+  }
 }
 
 /* (min-width: 768px) and (max-width: 1199px) */
@@ -887,7 +909,7 @@ ol {
     padding: 72px 92px 40px 92px;
     margin: 0px -12px 0px -12px;
   }
-  .we-doing-list {
+  .we-doing .we-doing-list {
     width: calc((100% - 2 * 24px) / 2);
     margin: 0px 12px 56px 12px;
   }
@@ -909,6 +931,20 @@ ol {
   .form-field {
     width: 264px;
   }
+
+  /* -------------------------portfolio--------------------- */
+
+  .portfolio-main {
+    padding: 64px 0px 96px;
+    width: 768px;
+    margin: 0 auto;
+  }
+  .navigation-list {
+    margin-bottom: 64px;
+  }
+  .navigation-list .we-doing-list:not(:last-child) {
+    margin-right: 24px;
+  }
 }
 
 /* (min-width: 768px) and (max-width: 1199px) */
@@ -928,6 +964,14 @@ ol {
   .title {
     padding-top: 96px;
   }
+  .advantages-subtitle {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+  }
+  .advantages-subtitle-text {
+    font-weight: 700;
+  }
 }
 /* ------------- adaptive desktop ------------- */
 
@@ -943,9 +987,6 @@ ol {
   .header-menu-contact {
     display: flex;
     gap: 40px;
-  }
-  .footer {
-    /* align-items: baseline; */
   }
   .footer-meta-right {
     margin-left: 120px;
@@ -999,5 +1040,25 @@ ol {
   }
   .title {
     margin-bottom: 72px;
+  }
+
+  /* -------------------------portfolio--------------------- */
+
+  .navigation-list {
+    margin-bottom: 72px;
+  }
+  .portfolio-main {
+    padding: 96px 0px 120px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .card-set-text {
+    font-size: 20px;
   }
 }
