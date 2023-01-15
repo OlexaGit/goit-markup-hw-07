@@ -52,6 +52,8 @@ body {
 }
 .menu-link:hover,
 .menu-link:focus,
+.menu-contact:hover,
+.menu-contact:focus,
 .current {
   color: var(--accent-color-logo);
 }
@@ -62,10 +64,10 @@ body {
   line-height: 1.5;
   transition: color 250ms var(--cubic-bezier);
 }
-.menu-contact:hover,
+/* .menu-contact:hover,
 .menu-contact:focus {
   color: var(--accent-color-logo);
-}
+} */
 footer {
   background-color: var(--primary-color);
   margin: 0 auto;
@@ -221,7 +223,6 @@ footer {
 }
 .modal {
   position: absolute;
-
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -387,15 +388,10 @@ textarea {
   margin-bottom: 8px;
   color: var(--primary-color);
 }
-/* .subtitle {
-  font-size: 36px;
-  line-height: 1.11;
-} */
 .subtitle-name {
   font-size: 20px;
   line-height: 1.2;
 }
-
 .subtitle-text {
   line-height: 1.5;
   color: var(--secondary-color);
@@ -403,7 +399,6 @@ textarea {
 .advantages {
   margin: 0 auto;
 }
-
 .icon-block {
   display: flex;
   align-items: center;
@@ -690,7 +685,6 @@ ol {
   .nav-logo {
     padding-bottom: 24px;
   }
-
   .section-advantages {
     padding: 96px 16px;
   }
@@ -716,19 +710,17 @@ ol {
     margin: 0 auto;
     min-width: 428px;
   }
-  .container {
+  .container,
+  .fone {
     width: 428px;
   }
   .section-advantages {
     padding: 96px 16px;
   }
-  .menu-nav {
-    display: none;
-  }
+  .menu-nav,
   .header-menu-contact {
     display: none;
   }
-
   .subtitle-name {
     text-align: center;
   }
@@ -740,9 +732,6 @@ ol {
     font-size: 36px;
     line-height: 1.11;
     margin: 0 35px 80px 35px;
-  }
-  .fone {
-    width: 428px;
   }
   .we-doing {
     padding: 0px 66px 96px 66px;
@@ -949,17 +938,10 @@ ol {
   }
 }
 
-/* (min-width: 768px) and (max-width: 1199px) */
-/* (min-width: 768px) and (max-width: 1199px) */
-/* (min-width: 768px) and (max-width: 1199px) */
-/* (min-width: 768px) and (max-width: 1199px) */
-/* (min-width: 768px) and (max-width: 1199px) */
-/* (min-width: 768px) and (max-width: 1199px) */
-/* (min-width: 768px) and (max-width: 1199px) */
+/* (min-width: 768px) and (max-width: 1199px) ----end*/
+
 @media screen and (max-width: 1199px) {
-  .icon-block {
-    display: none;
-  }
+  .icon-block,
   .section-we-doing {
     display: none;
   }
