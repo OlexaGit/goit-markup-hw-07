@@ -65,14 +65,16 @@ body {
   transition: color 250ms var(--cubic-bezier);
 }
 
-footer {
+.footer {
   background-color: var(--primary-color);
   margin: 0 auto;
+  padding: 96px 0;
 }
 .footer-text {
   color: var(--text-background-color-footer);
   line-height: 1.5;
   margin-top: 16px;
+  width: 268px;
 }
 .container {
   margin: 0 auto;
@@ -161,11 +163,12 @@ footer {
 /* -------------  STUDIO  ------------------*/
 
 .primery-section {
-  position: relative;
   background-color: var(--primary-color);
   color: var(--text-background-color);
+  max-width: 1440px;
   text-align: center;
   margin: 0 auto;
+  background-position: center;
   background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
   background-size: cover;
@@ -698,10 +701,7 @@ ol {
   .btn-footer {
     margin-top: 16px;
   }
-  .container,
-  .fone,
-  .primery-section,
-  footer {
+  .container {
     width: 428px;
   }
 
@@ -746,29 +746,30 @@ ol {
   .block-customer {
     flex-basis: calc((100% - 1 * 16px) / 2);
   }
-  footer {
+  .footer {
     text-align: center;
   }
-  .footer {
-    padding: 96px 0;
-  }
   .footer-meta-left {
-    margin: 0px 80px;
-  }
-  .footer-meta-right {
-    margin: 72px 110px;
+    margin-bottom: 72px;
   }
   .footer-text {
     text-align: left;
+    /* width: 268px; */
+    margin: 0 auto;
+    margin-top: 16px;
   }
   .form {
-    margin: 0px 16px;
+    margin-top: 72px;
   }
   .btn-footer {
     margin: 16px auto 0px;
   }
   .modal {
-    width: 392px;
+    width: 95%;
+    max-width: 392px;
+    height: 95%;
+    max-height: 586px;
+    overflow: scroll;
   }
 
   /* -----------------portfolio---------- */
@@ -788,10 +789,10 @@ ol {
 /* ------------- adaptive tablet ------------- */
 
 @media screen and (min-width: 768px) {
-  .container,
-  .fone,
-  footer,
   header {
+    width: 768px;
+  }
+  .container {
     width: 768px;
   }
   .container-header {
@@ -843,6 +844,13 @@ ol {
   .footer {
     display: flex;
   }
+  .footer .container {
+    display: flex;
+  }
+  .footer-text {
+    text-align: left;
+    width: 264px;
+  }
   .fone {
     padding: 96px 0 104px;
   }
@@ -871,7 +879,6 @@ ol {
     letter-spacing: 1.33;
   }
   .primery-section {
-    width: 768px;
     padding: 112px 0 108px;
   }
   .container-customer {
@@ -898,9 +905,11 @@ ol {
   .we-doing .we-doing-list {
     width: calc((100% - 1 * 24px) / 2);
   }
-  .footer {
+  .footer .container {
+    /* display: flex; */
     flex-wrap: wrap;
-    padding: 96px 108px;
+    width: 552px;
+    /* padding: 96px 108px; */
   }
   .footer-meta-left {
     width: 264px;
@@ -979,14 +988,12 @@ ol {
     margin-top: 40px;
   }
   .primery-section {
-    width: 1440px;
     padding: 188px 0;
   }
   .primery-title {
     margin: 0 auto 48px auto;
   }
   .fone {
-    width: 1440px;
     padding: 120px 0;
   }
   .advantages-list {
@@ -1008,8 +1015,7 @@ ol {
     padding-top: 120px;
     padding-bottom: 120px;
   }
-  footer {
-    width: 1440px;
+  .footer {
     padding: 100px 0;
   }
   .subtitle {
