@@ -194,7 +194,6 @@ footer {
   background-color: var(--background-focus-btn);
 }
 .menu-toggle {
-  /* padding: 0 auto; */
   background-color: #ffffff;
 }
 
@@ -431,6 +430,7 @@ textarea {
 .fone {
   background-color: var(--footer-logo-color);
   margin: 0 auto;
+  padding: 96px 0 128px;
 }
 .fone-item {
   background-color: var(--text-background-color);
@@ -486,7 +486,6 @@ textarea {
 }
 .focus-customer {
   margin: 0 auto;
-  /* padding: 16px 32px; */
   color: #8e8f99;
   transition: color 250ms var(--cubic-bezier);
 }
@@ -554,7 +553,6 @@ ol {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .navigation-list {
-  /* min-width: 320px; */
   justify-content: center;
   display: flex;
 }
@@ -704,16 +702,12 @@ ol {
   }
 }
 @media screen and (max-width: 767px) {
-  /* header {
-    margin: 0 auto;
-  } */
   .advantages-list:not(:last-child) {
     margin-bottom: 72px;
   }
-
-  /* .section-advantages {
-    padding: 96px 16px;
-  } */
+  .advantages-subtitle {
+    text-align: center;
+  }
   .menu-nav,
   .header-menu-contact {
     display: none;
@@ -735,18 +729,12 @@ ol {
     align-items: center;
     gap: 72px;
   }
-  /* .we-doing .we-doing-list {
-    margin-top: 72px;
-  } */
   .customers-list {
     flex-wrap: wrap;
     gap: 72px 16px;
-    /* margin: 0 -8px;
-    padding-bottom: 96px; */
   }
   .block-customer {
     flex-basis: calc((100% - 1 * 16px) / 2);
-    /* margin: 72px 8px 0px 8px; */
   }
   footer {
     text-align: center;
@@ -816,7 +804,7 @@ ol {
   .primery-title {
     font-size: 56px;
     line-height: 1.07;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 40px;
     width: 496px;
   }
   .modal {
@@ -845,6 +833,9 @@ ol {
   .footer {
     display: flex;
   }
+  .fone {
+    padding: 96px 0 104px;
+  }
 
   /* ------------portfolio--------------- */
 
@@ -858,50 +849,44 @@ ol {
     row-gap: 72px;
   }
   .card-set-list {
-    flex-basis: calc((100% - 48px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 
-/* (min-width: 768px) and (max-width: 1199px) */
+/* (min-width: 768px) and (max-width: 1157px) */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .header-menu-contact .menu-contact {
     font-size: 12px;
     letter-spacing: 1.33;
   }
   .primery-section {
     width: 768px;
-    padding: 112px 0;
+    padding: 112px 0 108px;
   }
   .container-customer {
-    padding: 0;
+    padding: 0px 108px;
   }
   .customers-list {
     flex-wrap: wrap;
-    padding: 0px 108px 96px;
-    margin: 0 -12px;
+    gap: 72px 24px;
   }
   .block-customer {
-    width: calc((100% - 3 * 24px) / 3);
-    margin: 72px 12px 0px 12px;
+    width: calc((100% - 2 * 24px) / 3);
   }
   .advantages {
     flex-wrap: wrap;
-    padding: 0;
-    margin: 0 -12px -72px -12px;
+    gap: 72px 24px;
   }
   .advantages-list {
-    width: calc((100% - 2 * 24px) / 2);
-    margin: 0px 12px 72px 12px;
+    width: calc((100% - 1 * 24px) / 2);
   }
   .we-doing {
     flex-wrap: wrap;
-    padding: 72px 92px 40px 92px;
-    margin: 0px -12px 0px -12px;
+    gap: 64px 24px;
   }
   .we-doing .we-doing-list {
-    width: calc((100% - 2 * 24px) / 2);
-    margin: 0px 12px 56px 12px;
+    width: calc((100% - 1 * 24px) / 2);
   }
   .footer {
     flex-wrap: wrap;
@@ -937,7 +922,7 @@ ol {
   }
 }
 
-/* (min-width: 768px) and (max-width: 1199px) ----end*/
+/* (min-width: 768px) and (max-width: 1157px) ----end*/
 
 @media screen and (max-width: 1157px) {
   .icon-block,
@@ -948,7 +933,6 @@ ol {
   .advantages-subtitle {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
   }
   .advantages-subtitle-text {
     font-weight: 500;
@@ -986,13 +970,14 @@ ol {
   }
   .primery-section {
     width: 1440px;
-    padding: 192px 0;
+    padding: 188px 0;
   }
   .primery-title {
     margin: 0 auto 48px auto;
   }
   .fone {
     width: 1440px;
+    padding: 120px 0;
   }
   .advantages-list {
     width: 264px;
@@ -1003,11 +988,11 @@ ol {
   .we-doing-list:not(:last-child) {
     margin-right: 24px;
   }
-  /* .customers-list {
-    display: flex;
-  } */
-  .block-customer:not(:last-child) {
-    margin-right: 24px;
+  .customers-list {
+    gap: 24px;
+  }
+  .block-customer {
+    width: calc((100% - 2 * 24px) / 3);
   }
   .section {
     padding-top: 120px;
@@ -1021,9 +1006,6 @@ ol {
     font-size: 20px;
     line-height: 1.2;
   }
-  /* .title {
-    margin-bottom: 72px;
-  } */
 
   /* -------------------------portfolio--------------------- */
 
